@@ -1,4 +1,4 @@
 FROM openjdk:11
-ADD target/springBoot-RestApi.jar springBoot-RestApi.jar
- 
-ENTRYPOINT ["java", "-jar", "springBoot-RestApi.jar"]
+VOLUME /tmp
+ADD target/rest-0.0.1-SNAPSHOT.jar app.jar
+ENTRYPOINT ["java","-jar","/app.jar"]

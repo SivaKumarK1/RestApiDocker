@@ -2,9 +2,7 @@ package com.example.demo.model;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.Table;
 
-@Table(name = "User")
 @Entity
 public class User {
 
