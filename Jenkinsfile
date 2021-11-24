@@ -1,6 +1,6 @@
 node{
     stage('SCM Checkout'){
-        git credentialsId: 'Git_token', url: 'https://github.com/AnilComakeit/RestApiDocker.git'
+        git credentialsId: 'Git', url: 'https://github.com/SivaKumarK1/RestApiDocker.git'
     }
     stage('Run Docker Compose File'){
         sh 'sudo docker-compose build'
