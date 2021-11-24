@@ -8,7 +8,7 @@ node{
     }
     
     stage('Push Image To Docker Hub'){
-        sh 'sudo docker login -u "anil76201" -p "Reddy@0108" docker.io'
+        sh 'sudo docker login -u "shimigami" -p "Sammy@123@" docker.io'
         sh 'sudo docker push anil76201/springrest:v1'
     }
 }
